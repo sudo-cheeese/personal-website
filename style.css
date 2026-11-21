@@ -72,10 +72,12 @@ ul .box {
 
 .clay {
   --c: var(--clay);
+  color: var(--ink);
 }
 
 .gold {
   --c: var(--gold);
+  color: var(--ink);
 }
 
 /* text */
@@ -100,8 +102,8 @@ ul {
 
 /* terminal */
 .terminal {
-  --c: #1b1710;
-  color: var(--bone);
+  --c: #0d1117;
+  color: #e6edf3;
   font-family: ui-monospace, Menlo, Consolas, monospace;
   font-size: .95rem;
   margin-top: 1.2rem;
@@ -110,19 +112,19 @@ ul {
 }
 
 .terminal .prompt {
-  color: #9caf88;
+  color: #3fb950;
 }
 
 .terminal .out {
-  color: #8f836d;
+  color: #8b949e;
 }
 
 .terminal a {
-  color: var(--gold);
+  color: #58a6ff;
 }
 
 .terminal a:focus-visible {
-  outline-color: var(--gold);
+  outline-color: #58a6ff;
 }
 
 a:focus-visible {
