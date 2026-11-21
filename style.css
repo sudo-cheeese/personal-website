@@ -1,9 +1,9 @@
 :root {
   --ink: #4C3D19;
   --paper: #cfbb99;
-  --1: #36422E;
-  --2: #ffa6cf;
-  --3: #ffe680;
+  --a: #36422E;
+  --b: #ffa6cf;
+  --c: #ffe680;
   --bone: #E5D7C4;
 }
 
@@ -66,15 +66,15 @@ ul .box {
 
 /* colors, used by either */
 .1 {
-  --c: var(--1);
+  --c: var(--a);
 }
 
 .2 {
-  --c: var(--2);
+  --c: var(--b);
 }
 
 .3 {
-  --c: var(--1);
+  --c: var(--c);
 }
 
 /* text */
