@@ -6,7 +6,10 @@
   --yellow: #ffe680;
 }
 
-* { box-sizing: border-box; margin: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 body {
   font-family: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
@@ -15,44 +18,112 @@ body {
   color: var(--ink);
   background-color: #eaf3ff;
   background-image:
-    linear-gradient(rgba(70,110,190,.2) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(70,110,190,.2) 1px, transparent 1px);
+    linear-gradient(rgba(70, 110, 190, .2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(70, 110, 190, .2) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
-main { max-width: 720px; margin: 0 auto; padding: 3rem 1.2rem; display: grid; gap: 2rem; }
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.2rem;
+  display: grid;
+  gap: 2rem;
+}
 
 /* ---- The two shared pieces: everything is a .box or a .pill ---- */
-.box, .pill {
+.box,
+.pill {
   background: var(--c, var(--paper));
   border: 3px solid var(--ink);
   box-shadow: 4px 4px 0 var(--ink);
   color: inherit;
 }
-.box  { border-radius: 22px; padding: 1.6rem; }
-.pill { border-radius: 999px; padding: 0 1rem; display: inline-block; text-decoration: none; }
-a.pill:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
 
-ul .box { flex: 1 1 180px; padding: 1rem; }  /* project cards sit in a row */
+.box {
+  border-radius: 22px;
+  padding: 1.6rem;
+}
+
+.pill {
+  border-radius: 999px;
+  padding: 0 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.pill:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+/* project cards sit in a row */
+ul .box {
+  flex: 1 1 180px;
+  padding: 1rem;
+}
 
 /* colors, used by either */
-.mint   { --c: var(--mint); }
-.pink   { --c: var(--pink); }
-.yellow { --c: var(--yellow); }
+.mint {
+  --c: var(--mint);
+}
+
+.pink {
+  --c: var(--pink);
+}
+
+.yellow {
+  --c: var(--yellow);
+}
 
 /* text */
-h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.2; margin: .6rem 0; }
-h2 { font-size: 1.5rem; margin-bottom: .8rem; }
-ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+h1 {
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  line-height: 1.2;
+  margin: .6rem 0;
+}
 
-/* the only one-off: a dark terminal */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: .8rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+
+/* terminal */
 .terminal {
-  --c: var(--ink);
-  color: var(--mint);
+  --c: #0d1117;
+  color: #e6edf3;
   font-family: ui-monospace, Menlo, Consolas, monospace;
   font-size: .95rem;
   margin-top: 1.2rem;
   padding: .9rem 1.1rem;
+  overflow-wrap: anywhere;
 }
 
-a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.terminal .prompt {
+  color: #3fb950;
+}
+
+.terminal .out {
+  color: #8b949e;
+}
+
+.terminal a {
+  color: #58a6ff;
+}
+
+.terminal a:focus-visible {
+  outline-color: #58a6ff;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
