@@ -32,7 +32,6 @@ main {
   gap: 2rem;
 }
 
-/* ---- The two shared pieces: everything is a .box or a .pill ---- */
 .box,
 .pill {
   background: var(--c, var(--paper));
@@ -58,13 +57,11 @@ a.pill:hover {
   box-shadow: 2px 2px 0 var(--ink);
 }
 
-/* project cards sit in a row */
 ul .box {
   flex: 1 1 180px;
   padding: 1rem;
 }
 
-/* colors, used by either */
 .moss {
   --c: var(--moss);
   color: var(--bone);
@@ -90,6 +87,13 @@ h1 {
 h2 {
   font-size: 1.5rem;
   margin-bottom: .8rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  margin-bottom: .4rem;
 }
 
 ul {
