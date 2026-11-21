@@ -1,9 +1,9 @@
 :root {
   --ink: #4C3D19;
   --paper: #cfbb99;
-  --dark_green: #36422E;
-  --dark orange: #ffa6cf;
-  --meh: #ffe680;
+  --1: #36422E;
+  --2: #ffa6cf;
+  --3: #ffe680;
   --bone: #E5D7C4;
 }
 
@@ -17,7 +17,7 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--ink);
-  background-color: --bone;
+  background-color: var(--bone);
   background-image:
     linear-gradient(rgba(76, 61, 25, .2) 1px, transparent 1px),
     linear-gradient(90deg, rgba(76, 61, 25, .2) 1px, transparent 1px);
@@ -65,16 +65,16 @@ ul .box {
 }
 
 /* colors, used by either */
-.mint {
-  --c: var(--mint);
+.1 {
+  --c: var(--1);
 }
 
-.pink {
-  --c: var(--pink);
+.2 {
+  --c: var(--2);
 }
 
-.yellow {
-  --c: var(--yellow);
+.3 {
+  --c: var(--1);
 }
 
 /* text */
