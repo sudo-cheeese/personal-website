@@ -1,9 +1,10 @@
 :root {
-  --ink: #1e2347;
-  --paper: #fbfdff;
-  --mint: #8cecc8;
-  --pink: #ffa6cf;
-  --yellow: #ffe680;
+  --ink: #4C3D19;
+  --paper: #cfbb99;
+  --dark_green: #36422E;
+  --dark orange: #ffa6cf;
+  --meh: #ffe680;
+  --bone: #E5D7C4;
 }
 
 * {
@@ -16,10 +17,10 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--ink);
-  background-color: #eaf3ff;
+  background-color: --bone;
   background-image:
-    linear-gradient(rgba(70, 110, 190, .2) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(70, 110, 190, .2) 1px, transparent 1px);
+    linear-gradient(rgba(76, 61, 25, .2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(76, 61, 25, .2) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
