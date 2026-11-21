@@ -1,10 +1,10 @@
 :root {
-  --ink: #4C3D19;
+  --ink: #3a2e17;
   --paper: #cfbb99;
-  --first: #36422E;
-  --second: #ffa6cf;
-  --third: #ffe680;
-  --bone: #E5D7C4;
+  --bone: #e5d7c4;
+  --moss: #36422e;
+  --clay: #d1a37e;
+  --gold: #d8b768;
 }
 
 * {
@@ -19,8 +19,8 @@ body {
   color: var(--ink);
   background-color: var(--bone);
   background-image:
-    linear-gradient(rgba(76, 61, 25, .2) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(76, 61, 25, .2) 1px, transparent 1px);
+    linear-gradient(rgba(58, 46, 23, .15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 46, 23, .15) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
@@ -65,16 +65,17 @@ ul .box {
 }
 
 /* colors, used by either */
-.1 {
-  --c: var(--first);
+.moss {
+  --c: var(--moss);
+  color: var(--bone);
 }
 
-.2 {
-  --c: var(--second);
+.clay {
+  --c: var(--clay);
 }
 
-.3 {
-  --c: var(--third);
+.gold {
+  --c: var(--gold);
 }
 
 /* text */
@@ -99,8 +100,8 @@ ul {
 
 /* terminal */
 .terminal {
-  --c: #0d1117;
-  color: #e6edf3;
+  --c: #1b1710;
+  color: var(--bone);
   font-family: ui-monospace, Menlo, Consolas, monospace;
   font-size: .95rem;
   margin-top: 1.2rem;
@@ -109,19 +110,19 @@ ul {
 }
 
 .terminal .prompt {
-  color: #3fb950;
+  color: #9caf88;
 }
 
 .terminal .out {
-  color: #8b949e;
+  color: #8f836d;
 }
 
 .terminal a {
-  color: #58a6ff;
+  color: var(--gold);
 }
 
 .terminal a:focus-visible {
-  outline-color: #58a6ff;
+  outline-color: var(--gold);
 }
 
 a:focus-visible {
