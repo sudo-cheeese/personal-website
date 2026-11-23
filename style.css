@@ -35,13 +35,13 @@ main {
 .box,
 .pill {
   background: var(--c, var(--paper));
-  border: 3px solid var(--ink);
+  /*border: 3px solid var(--ink);*/
   box-shadow: 4px 4px 0 var(--ink);
   color: inherit;
 }
 
 .box {
-  border-radius: 22px;
+  /*border-radius: 22px;*/
   padding: 1.6rem;
 }
 
